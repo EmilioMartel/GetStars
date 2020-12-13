@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pdf_navigation"
+    app:startDestination="@id/terminosCondicionesFragment">
+
+    <fragment
+        android:id="@+id/terminosUsoFragment"
+        android:name="com.marquelo.getstars.pdf.TerminosUsoFragment"
+        android:label="fragment_terminos_uso"
+        tools:layout="@layout/fragment_terminos_uso" />
+    <fragment
+        android:id="@+id/terminosCondicionesFragment"
+        android:name="com.marquelo.getstars.pdf.TerminosCondicionesFragment"
+        android:label="fragment_terminos_condiciones"
+        tools:layout="@layout/fragment_terminos_condiciones" />
+</navigation>

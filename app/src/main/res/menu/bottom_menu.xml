@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:title="@string/home_title"
+        android:icon="@drawable/home_selector"/>
+    <item
+        android:id="@+id/searchFragment"
+        android:title="@string/search_title"
+        android:icon="@drawable/search_selector"/>
+
+    <item
+        android:id="@+id/autographActivity"
+        android:title="@string/firma_title"
+        android:icon="@drawable/ic_autografo"/>
+    <item
+        android:id="@+id/storeFragment"
+        android:title="@string/store_title"
+        android:icon="@drawable/store_selector"/>
+    <item
+        android:id="@+id/profileFragment"
+        android:title="@string/profile_title"
+        android:icon="@drawable/user_selector"/>
+
+</menu>

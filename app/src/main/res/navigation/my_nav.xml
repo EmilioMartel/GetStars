@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeFragment"
+    tools:ignore="ExtraText">
+
+    //------------------ MENU PRINCIPAL ------------/
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.marquelo.getstars.menu_lobby_fragments.home.HomeFragment"
+        android:label="@string/home_title"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.marquelo.getstars.menu_lobby_fragments.search.SearchFragment"
+        android:label="@string/search_title"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/storeFragment"
+        android:name="com.marquelo.getstars.menu_lobby_fragments.store.StoreFragment"
+        android:label="@string/store_title"
+        tools:layout="@layout/fragment_store" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.marquelo.getstars.menu_lobby_fragments.profile.ProfileFragment"
+        android:label="@string/profile_title"
+        tools:layout="@layout/fragment_profile" />
+
+    //------------SUB MENU DE BUSQUEDA -------------//
+    <fragment
+        android:id="@+id/popularFragment"
+        android:name="com.marquelo.getstars.menu_lobby_fragments.search.popular.PopularFragment"
+        android:label="@string/populares_title"
+        tools:layout="@layout/fragment_popular" />
+    <fragment
+        android:id="@+id/featuredFragment"
+        android:name="com.marquelo.getstars.menu_lobby_fragments.search.featured.FeaturedFragment"
+        android:label="@string/destacados_title"
+        tools:layout="@layout/fragment_featured" />
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.marquelo.getstars.menu_lobby_fragments.search.category.CategoryFragment"
+        android:label="@string/categorias_title"
+        tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.marquelo.getstars.menu_lobby_fragments.search.news.NewsFragment"
+        android:label="@string/novedades_title"
+        tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/detallada_FirmasFragment"
+        android:name="com.marquelo.getstars.menu_lobby_fragments.profile.ItemSalesFragment"
+        android:label="fragment_detallada_firmas"
+        tools:layout="@layout/fragment_compras_firmas" />
+    <fragment
+        android:id="@+id/grid_Firmas_Fragment"
+        android:name="com.marquelo.getstars.menu_lobby_fragments.profile.Firmas_Manual_Fragment"
+        android:label="fragment_grid_firmas"
+        tools:layout="@layout/fragment_manual_firmas" />
+
+    <fragment
+        android:id="@+id/cvFamososDetallada"
+        android:name="com.marquelo.getstars.Cardview.CardViewFamososDetallada"
+        android:label="Meet your Stars"
+        tools:layout="@layout/fragment_cardview_detallada"/>
+    <fragment
+        android:id="@+id/sorteosFragment"
+        android:name="com.marquelo.getstars.menu_lobby_fragments.store.menu_store_fragments.sorteos.SorteosFragment"
+        android:label="Sorteos"
+        tools:layout="@layout/fragment_sorteos" />
+    <fragment
+        android:id="@+id/subastasFragment"
+        android:name="com.marquelo.getstars.menu_lobby_fragments.store.menu_store_fragments.subastas.SubastasFragment"
+        android:label="Subastas"
+        tools:layout="@layout/fragment_subastas" />
+    <fragment
+        android:id="@+id/livesFragment"
+        android:name="com.marquelo.getstars.menu_lobby_fragments.store.menu_store_fragments.lives.LivesFragment"
+        android:label="Lives"
+        tools:layout="@layout/fragment_lives" />
+    <fragment
+        android:id="@+id/categoryFiltradaFragment"
+        android:name="com.marquelo.getstars.menu_lobby_fragments.search.category.CategoryFiltradaFragment"
+        tools:layout="@layout/fragment_category_filtrada" />
+    <include app:graph="@navigation/profile_view_navigation" />
+    <include app:graph="@navigation/famous_profile_view_navigation" />
+
+
+</navigation>

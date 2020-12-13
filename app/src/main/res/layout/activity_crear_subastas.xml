@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".menu_lobby_fragments.profile.famoso.CrearSubastasActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Crear Subasta"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/nombreSubasta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="40dp"
+                android:ems="10"
+                android:hint="Nombre de la subasta"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+            <EditText
+                android:id="@+id/txtDescriptionSubasta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="40dp"
+                android:ems="10"
+                android:hint="Descripción"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nombreSubasta" />
+
+            <EditText
+                android:id="@+id/txtFechaLimiteSubasta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="50dp"
+                android:ems="10"
+                android:hint="Fecha límite"
+                android:inputType="date"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnFechaLimiteSubasta"
+                app:layout_constraintTop_toBottomOf="@+id/txtDescriptionSubasta" />
+
+            <Button
+                android:id="@+id/btnFechaLimiteSubasta"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="36dp"
+                android:background="@drawable/btn_orange"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:text="Fecha Limite"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txtFechaLimiteSubasta" />
+
+            <Button
+                android:id="@+id/btnCargarImagenSubasta"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="68dp"
+                android:background="@drawable/btn_orange"
+                android:padding="5dp"
+                android:text="Cargar Imagen"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/imgFotoSubasta"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imgFotoSubasta" />
+
+            <ImageView
+                android:id="@+id/imgFotoSubasta"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="92dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtSetPrecio"
+                app:srcCompat="@drawable/ic_user" />
+
+            <Button
+                android:id="@+id/btnCrearSubasta"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/btn_orange"
+                android:onClick="onClick"
+                android:text="Crear subasta"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgFotoSubasta"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/btnSetPrecio"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/btn_orange"
+                android:padding="5dp"
+                android:text="Precio base"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txtSetPrecio" />
+
+            <EditText
+                android:id="@+id/txtSetPrecio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:ems="10"
+                android:hint="Precio"
+                android:inputType="numberSigned"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnSetPrecio"
+                app:layout_constraintTop_toBottomOf="@+id/txtFechaLimiteSubasta" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="28dp"
+                android:text="€"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/txtSetPrecio"
+                app:layout_constraintTop_toTopOf="@+id/txtSetPrecio" />
+
+            <ProgressBar
+                android:id="@+id/progressBar6"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="66dp"
+                android:layout_height="75dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

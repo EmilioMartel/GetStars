@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.marquelo.getstars">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="n">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2307684125945843~6629302622"/>
+
+        <activity android:name=".ui.FotosCompradasActivity" />
+        <activity android:name=".ui.DeleteAccountActivity" />
+        <activity android:name=".ui.ContactUsActivity" />
+        <activity android:name=".ui.ChangePasswordActivity" />
+        <activity android:name=".ui.ShowSelfInfoActivity" />
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait" />
+        <activity android:name=".menu_lobby_fragments.profile.foto.FotoSalesActivity" />
+        <activity android:name=".menu_lobby_fragments.profile.firmas.FirmaDedActivity" />
+        <activity android:name=".menu_lobby_fragments.store.menu_store_fragments.lives.LivesDetalladoActivity" />
+        <activity android:name=".menu_lobby_fragments.store.menu_store_fragments.subastas.SubastaCreadaActivity" />
+        <activity android:name=".ui.FirmaManualSavedActivity" />
+        <activity android:name=".pdf.LeerTermsConditions" />
+        <activity android:name=".pdf.LeerPrivatePolicy" />
+        <activity android:name=".menu_lobby_fragments.profile.famoso.CrearSubastasActivity" />
+        <activity android:name=".menu_lobby_fragments.store.menu_store_fragments.sorteos.SorteoCreadoActivity" />
+        <activity android:name=".menu_lobby_fragments.profile.famoso.CrearSorteoActivity" />
+        <activity
+            android:name=".menu_lobby_fragments.store.menu_store_fragments.sorteos.SorteosDetalladosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_lobby_fragments.store.menu_store_fragments.subastas.SubastasDetalladasActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cardview.item.fotos.personalizada.ItemPhotoCustomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cardview.item.fotos.basica.FotoFirmaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cardview.item.fotos.ItemFotoCardviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cardview.item.fotos.dedicatoria.ItemPhotoDedicatoriaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.CheckoutActivityJava"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.Carrito"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ItemCarritoAdded"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cardview.item.autografos.ItemFirmaDedicada"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cardview.item.autografos.ItemFirmaCVActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cardview.CardViewFamososDetallada"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.FirmaManualDetalladaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AutographActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".working.PaintView"
+            android:screenOrientation="portrait"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".ui.LobbyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".ui.SignInActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

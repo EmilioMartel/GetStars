@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_view_navigatio"
+    app:startDestination="@id/grid_Firmas_Fragment2">
+
+    <fragment
+        android:id="@+id/detallada_FirmasFragment2"
+        android:name="com.marquelo.getstars.menu_lobby_fragments.profile.ItemSalesFragment"
+        android:label="fragment_detallada_firmas"
+        tools:layout="@layout/fragment_compras_firmas" />
+    <fragment
+        android:id="@+id/grid_Firmas_Fragment2"
+        android:name="com.marquelo.getstars.menu_lobby_fragments.profile.Firmas_Manual_Fragment"
+        android:label="fragment_grid_firmas"
+        tools:layout="@layout/fragment_manual_firmas" />
+    <fragment
+        android:id="@+id/firmaDedicadaFragment"
+        android:name="com.marquelo.getstars.menu_lobby_fragments.profile.firmas.FirmaDedicadaFragment"
+        android:label="fragment_firma_dedicada"
+        tools:layout="@layout/fragment_firma_dedicada" />
+</navigation>

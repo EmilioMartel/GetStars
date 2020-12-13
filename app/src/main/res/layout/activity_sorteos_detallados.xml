@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".menu_lobby_fragments.store.menu_store_fragments.sorteos.SorteosDetalladosActivity">
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <ImageView
+          android:id="@+id/imageView"
+          android:layout_width="match_parent"
+          android:layout_height="300dp"
+          android:scaleType="fitCenter"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:srcCompat="@drawable/ic_usuario" />
+
+      <TextView
+          android:id="@+id/txtNameSorteo"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          android:text="nombre"
+          android:shadowColor="#000000"
+          android:shadowDx="2"
+          android:shadowDy="5"
+          android:shadowRadius="10"
+          android:textSize="25sp"
+          android:textColor="@color/white"
+          android:textStyle="bold"
+          android:textAlignment="center"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+      <TextView
+          android:id="@+id/txtDescripcionSorteo"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="40dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="40dp"
+          android:text="Descripcion"
+          android:textColor="#000"
+          android:textSize="17sp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.501"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/txtNameSorteo" />
+
+      <TextView
+          android:id="@+id/txtParticipacion"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:layout_marginBottom="16dp"
+          android:text="Ya estás participando"
+          android:textStyle="bold"
+          android:textColor="#000"
+          android:visibility="invisible"
+          app:layout_constraintBottom_toTopOf="@+id/btnNoParticipar"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+      <Button
+          android:id="@+id/btnNoParticipar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="40dp"
+          android:layout_marginEnd="40dp"
+          android:background="@drawable/btn_border_red"
+          android:text="Dejar de participar"
+          android:textColor="@color/red"
+          android:visibility="invisible"
+          app:layout_constraintBottom_toBottomOf="@+id/btnParticipar"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="1.0"
+          app:layout_constraintStart_toStartOf="parent" />
+
+
+      <Button
+          android:id="@+id/btnParticipar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="40dp"
+          android:layout_marginEnd="40dp"
+          android:layout_marginBottom="32dp"
+          android:text="Participar"
+          android:background="@drawable/btn_border_blue"
+          android:textColor="@color/colorAccent"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/txtParticipacion"
+          app:layout_constraintVertical_bias="1.0" />
+
+      <LinearLayout
+          android:id="@+id/linearLayout2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="24dp"
+          android:orientation="horizontal"
+          android:padding="5dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/txtDescripcionSorteo">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="7dp"
+            android:text="Fecha Límite:"
+            android:textColor="#000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/txtFechaSorteo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha"
+            android:textColor="#000"
+            android:textSize="22sp" />
+      </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+  </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

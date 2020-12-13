@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/famous_profile_view_navigation"
+    app:startDestination="@id/crearEventosFragment">
+
+    <fragment
+        android:id="@+id/crearEventosFragment"
+        android:name="com.marquelo.getstars.menu_lobby_fragments.profile.famoso.CrearEventFragment"
+        android:label="fragment_crear_eventos"
+        tools:layout="@layout/fragment_crear_eventos" />
+    <fragment
+        android:id="@+id/firmas_Manual_Fragment"
+        android:name="com.marquelo.getstars.menu_lobby_fragments.profile.Firmas_Manual_Fragment"
+        android:label="fragment_manual_firmas"
+        tools:layout="@layout/fragment_manual_firmas" />
+    <fragment
+        android:id="@+id/firmas_Compras_Fragment"
+        android:name="com.marquelo.getstars.menu_lobby_fragments.profile.ItemSalesFragment"
+        android:label="fragment_compras_firmas"
+        tools:layout="@layout/fragment_compras_firmas" />
+</navigation>

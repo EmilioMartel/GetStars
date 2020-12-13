@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="?attr/actionBarSize">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_carro" />
+
+    <TextView
+        android:id="@+id/badge_counter"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+
+        android:background="@drawable/badge"
+        android:gravity="center"
+        android:text="12"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="5dp"/>
+
+</LinearLayout>

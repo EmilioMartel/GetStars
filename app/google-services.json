@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1032437718762",
+    "firebase_url": "https://getstars-a36bb.firebaseio.com",
+    "project_id": "getstars-a36bb",
+    "storage_bucket": "getstars-a36bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032437718762:android:7f4da9cb0bc9aedbe70193",
+        "android_client_info": {
+          "package_name": "com.marquelo.getstars"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032437718762-aupj4mcgk2b5p4sqp3n62g819mpovrif.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.marquelo.getstars",
+            "certificate_hash": "7b78ff3afe204dd18fdec2dba94c9efa7cc43e19"
+          }
+        },
+        {
+          "client_id": "1032437718762-bu8mnc13i12hs8ld7e5097ghqbvt7shm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUqgi8KIGN1YwOHzXBg2wd7k1dlxYtk9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032437718762-bu8mnc13i12hs8ld7e5097ghqbvt7shm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1032437718762-58kpbg30fog1klti18tb5ofg86tf3fq5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.marquelo.GetStars"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">GetStars</string>
+    <string name="prefs_file">com.marquelo.getstars.PREFERENCE_FILE_KEY</string>
+
+    //-------------- Titulos de los fragmentos -----------------------//
+    <string name="profile_title">Perfil</string>
+    <string name="store_title">Tienda</string>
+    <string name="search_title">Búsqueda</string>
+    <string name="home_title">Inicio</string>
+
+    //-------------- Títulos del menú de búsqueda ---------------//
+    <string name="categorias_title">Categorías</string>
+    <string name="destacados_title">Destacados</string>
+    <string name="populares_title">Populares</string>
+    <string name="novedades_title">Novedades</string>
+
+    //-------------- Otros -------------------//
+    <string name="firma_title">Firma</string>
+    <string name="title_activity_settings">Ajustes</string>
+    <string name="txt_descripcion_firma">Texto de Descripcion dfjdfsdsfñdsñdssdañjlñsdañdsdfsjdfjkldfsjklfdsjklñfdsjklfdsjklñfdsjklfdsjklfdsjkldfsjklfsdkjlfdskljfdsjklfdskjldfs</string>
+
+    //-------------- Títulos precios -------------------//
+    <string name="btn_precio_firma_dedicada">Autógrafo dedicado: 1.99€</string>
+    <string name="description_foto_personalizada">Escriba del tema o motivo por el cual le gustaría que el famoso le dedicase unas palabras de motivación, logro, felicitacion, apoyo, etc.</string>
+    <string name="description_foto_firmada">Consigue aquí y ahora un recuerdo que permanecerá eterno contigo, no es solo una firma, es la marca tallada a mano de tu estrella favorita</string>
+    <string name="title_activity_settings2">SettingsActivity2</string>
+
+
+    <string name="aviso_eliminar_cuenta">Una vez pulsado el botón de \"eliminar cuenta\", todos tus datos de la app y también compras realizadas y/o participaciones en sorteos/subastas serán borrados automáticamente sin posibilidad de recuperación de la misma. Por favor esté seguro/a de la acción que va a realizar. Atentamente el equipo de GetStars.</string>
+
+
+</resources>
